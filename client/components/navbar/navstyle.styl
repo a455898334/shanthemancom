@@ -1,0 +1,75 @@
+offscrn = -25%
+
+.navbutton
+  color white 
+  font-size 30px
+  width 30%
+  min-width 400px
+  z-index 999
+
+.navbutton
+  position fixed
+
+.navbutton.active
+  position absolute
+
+
+.navbutton.left
+  -webkit-transition left .5s /* For Safari 3.1 to 6.0 */
+  transition left .3s
+  left offscrn
+  text-align right
+  .wrapper
+    float left
+    display inline
+
+.navbutton.left:hover
+  left 0
+
+.navbutton.right
+  -webkit-transition right .3s; /* For Safari 3.1 to 6.0 */
+  transition right .3s;
+  right offscrn
+  .wrapper
+    float right
+    display inline
+
+.navbutton.right:hover
+  right 0
+
+.navbutton:hover .fa-angle-left
+  visibility hidden
+
+.navbutton:hover .fa-angle-right
+  visibility hidden
+
+.navbutton.bot
+  bottom 10%
+
+.navbutton.top
+  top 10%
+
+.navbutton.bot.left
+  background-color color2
+
+.navbutton.bot.right
+  background-color color3
+
+.navbutton.top.left
+  background-color color4
+
+.navbutton.top.right
+  background-color color5
+
+.buttonwrapper
+  padding 20px 20px
+
+.navbutton.active.left
+  left 0
+
+.navbutton.active.right
+  right 0
+
+.active i
+  visibility hidden
+

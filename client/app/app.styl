@@ -1,0 +1,84 @@
+@import "font-awesome/css/font-awesome.css"
+@import "bootstrap/dist/css/bootstrap.css"
+
+//
+// Bootstrap Fonts
+//
+
+@font-face
+    font-family: 'Glyphicons Halflings'
+    src: url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot')
+    src: url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+    url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'),
+    url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+    url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+
+//
+// Font Awesome Fonts
+//
+
+@font-face
+  font-family: 'FontAwesome'
+  src: url('../bower_components/font-awesome/fonts/fontawesome-webfont.eot?v=4.1.0')
+  src: url('../bower_components/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'),
+  url('../bower_components/font-awesome/fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'),
+  url('../bower_components/font-awesome/fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'),
+  url('../bower_components/font-awesome/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+  font-weight: normal
+  font-style: normal
+
+//
+// App-wide Styles
+//
+color1 = #F0ECC9
+color2 = #503D2E
+color3 = #D54B1A
+color4 = #058789
+color5 = #E3A72F
+
+
+.browsehappy
+    background #ccc
+    color #000
+    margin 0.2em 0
+    padding 0.2em 0
+body
+  background-color color1
+
+html
+  height 100%
+  overflow-x hidden
+
+
+.centercontent
+  transition opacity .5s
+  color white
+  width 80%
+  min-height 80%
+  background rgb(0,0,0) //fallback
+  background rgba(0,0,0, 0.4)
+  position absolute
+  left 0
+  right 0
+  top 0
+  margin auto
+  margin-top 10vh
+  margin-bottom 10vh
+  padding 7% 10%
+
+a
+  color color1
+
+a:hover
+  color color1
+
+.text-muted
+  color color1
+
+// Component styles are injected through grunt
+// injector
+@import 'experience/experience.styl';
+@import 'main/main.styl';
+@import 'projects/projects.styl';
+@import 'navbar/navstyle.styl';
+// endinjector
