@@ -4,10 +4,15 @@ offscrn = -25%
   color white 
   font-size 30px
   width 30%
-  min-width 400px
   z-index 999
   cursor pointer
   position fixed
+  @media (max-width: 1050px)
+    font-size 20px
+  @media (max-width: 780px)
+    font-size 15px
+  @media (max-width: 550px)
+    font-size 10px
 
 .navbutton.active
   position absolute
@@ -62,7 +67,7 @@ offscrn = -25%
   background-color color5
 
 .buttonwrapper
-  padding 20px 20px
+  padding 20px 5%
 
 .navbutton.active.left
   left 0
