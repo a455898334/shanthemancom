@@ -8,9 +8,7 @@ angular.module('shanmancomApp', [
   'ui.bootstrap'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
-    $urlRouterProvider
-      .otherwise('/');
-
+    $urlRouterProvider.otherwise('/');
     $locationProvider.html5Mode(true);
   })
   .run(function($rootScope){
